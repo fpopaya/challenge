@@ -1,5 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
+import { logger } from '@/infrastructure/logging/logger'
 import type { User } from '@/shared/types/user.types'
 
 interface SessionState {
@@ -41,7 +42,7 @@ export const useSessionStore = create<SessionState & SessionActions>()(
             const str = sessionStorage.getItem(name)
             return str ? JSON.parse(str) : null
           } catch (error) {
-            console.error('Error al leer de sessionStorage:', error)
+            logger.error('Error al leer de sessionStorage:', error)
             return null
           }
         },
@@ -49,14 +50,14 @@ export const useSessionStore = create<SessionState & SessionActions>()(
           try {
             sessionStorage.setItem(name, JSON.stringify(value))
           } catch (error) {
-            console.error('Error al guardar en sessionStorage:', error)
+            logger.error('Error al guardar en sessionStorage:', error)
 
             if (error instanceof Error && error.name === 'QuotaExceededError') {
               try {
                 sessionStorage.clear()
                 sessionStorage.setItem(name, JSON.stringify(value))
               } catch (retryError) {
-                console.error('Error al reintentar guardar en sessionStorage:', retryError)
+                logger.error('Error al reintentar guardar en sessionStorage:', retryError)
               }
             }
           }
@@ -65,7 +66,7 @@ export const useSessionStore = create<SessionState & SessionActions>()(
           try {
             sessionStorage.removeItem(name)
           } catch (error) {
-            console.error('Error al eliminar de sessionStorage:', error)
+            logger.error('Error al eliminar de sessionStorage:', error)
           }
         },
       },
