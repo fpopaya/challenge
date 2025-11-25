@@ -53,12 +53,7 @@ Aplicación web desarrollada en React + TypeScript que muestra una lista de Pok�
    ```
    La aplicación estará disponible en `http://localhost:5173`
 
-5. **Ejecutar tests**
-   ```bash
-   npm run test
-   ```
-
-6. **Build para producción**
+5. **Build para producción**
    ```bash
    npm run build
    npm run preview  # Preview del build
@@ -500,9 +495,8 @@ Esta mejora teórica asume un escenario donde se migra de Supabase (backend cont
 - **TanStack Virtual 3** - List virtualization
 - **React.lazy() + Suspense** - Code splitting
 
-### Quality & Testing
+### Quality
 - **Biome 2** - Linter & formatter
-- **Vitest 2** - Unit testing
 - **TypeScript Strict Mode** - Type checking
 
 ---
