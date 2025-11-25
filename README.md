@@ -47,13 +47,19 @@ Aplicación web desarrollada en React + TypeScript que muestra una lista de Pok�
 
    **Nota:** Estas son credenciales públicas del proyecto demo (solo lectura).
 
-4. **Ejecutar en modo desarrollo**
+4. **Credenciales de prueba para login**
+   ```
+   Email: poke.tenpo@tenpo.cl
+   Contraseña: 123456
+   ```
+
+5. **Ejecutar en modo desarrollo**
    ```bash
    npm run dev
    ```
    La aplicación estará disponible en `http://localhost:5173`
 
-5. **Build para producción**
+6. **Build para producción**
    ```bash
    npm run build
    npm run preview  # Preview del build
