@@ -1,5 +1,9 @@
 # TenpoPoke - Challenge Frontend
 
+[iPhone-13-PRO.webm](https://github.com/user-attachments/assets/12500616-764d-4905-9169-83b4dafaa9d4)
+
+[Macbook-Air.webm](https://github.com/user-attachments/assets/7cd96743-3f23-41d3-99ec-bcdc06b24c6f)
+
 Aplicación web desarrollada en React + TypeScript que muestra una lista de Pokémon consumiendo la API pública de PokeAPI, con sistema de autenticación y arquitectura escalable.
 
 ## 📋 Tabla de Contenidos
