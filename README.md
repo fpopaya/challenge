@@ -4,7 +4,7 @@
 
 [Macbook-Air.webm](https://github.com/user-attachments/assets/7cd96743-3f23-41d3-99ec-bcdc06b24c6f)
 
-Aplicación web desarrollada en React + TypeScript que muestra una lista de Pokémon consumiendo la API pública de PokeAPI, con sistema de autenticación y arquitectura escalable.
+Aplicación web desarrollada en React + TypeScript que muestra una lista de Pokémon consumiendo datos desde Supabase (base de datos sembrada con información de PokeAPI), con sistema de autenticación y arquitectura escalable.
 
 ## 📋 Tabla de Contenidos
 
